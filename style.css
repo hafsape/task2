@@ -1,0 +1,220 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    background-color: #121212;
+    font-family: 'Montserrat' , sans-serif;
+}
+.sidebar{
+   position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 300px;
+    background-color: #000000;
+    padding:24px;
+
+}
+.sidebar .logo img{
+    width: 130px;
+}
+.sidebar .sidebar_categories ul{
+    list-style: none;
+    margin-top: 20px;
+}
+ .sidebar .sidebar_categories ul li{
+    padding: 10px 0px;
+
+ }
+ .sidebar .sidebar_categories ul li a{
+    color: #b3b3b3;
+    font-weight: 500;
+    font-size:18px ;
+    text-decoration: none;
+ }
+ .sidebar .sidebar_categories ul li .fa{
+    font-size: 20px;
+    margin-right: 10px;
+ }
+ .sidebar .sidebar_categories ul li a:hover{
+    color: #ffffff;
+ }
+ .sidebar .policies {
+    position: absolute;
+    bottom: 100px;
+}
+.sidebar .policies ul{
+    list-style: none;
+}
+.sidebar .policies ul li{
+    padding-bottom: 5px;
+}
+.sidebar .policies ul li a{
+    color: #b3b3b3;
+    font-weight: 500;
+    font-size: 10px;
+    text-decoration: none;
+}
+.sidebar .policies ul li a:hover{
+    text-decoration: underline;
+}
+.mainbody{
+    margin-left: 350px;
+    margin-bottom: 100px;
+}
+.topbody{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 14px 30px;
+}
+.topbody .buttons button{
+    color: #7a7a7a;
+    cursor: not-allowed;
+    width:34px;
+    height: 34px;
+    border-radius: 100%;
+    font-size: 18px;
+    border: 0px;
+    background-color: #090909;
+    margin-right: 10px;
+}
+.topbody .topright {
+    display: flex;
+    align-items: center;
+}
+.topbody .topright ul{
+    list-style: none;
+}
+.topbody .topright ul li{
+    display: inline-block;
+    margin: 0px 8px;
+    width:70px;
+}.topbody .topright ul li a{
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.topbody .topright ul li a:hover{
+    color: #ffffff;
+    font-size: 15px;
+}
+.topbody .topright button{
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.topbody .topright button:hover{
+    background-color: #f2f2f2;
+}
+.spotifyPlaylists{
+    padding: 20px 40px;
+}
+.spotifyPlaylists h2{
+    color:#ffffff;
+    font-size: 22px;
+    margin-bottom: 20px;
+
+}
+.spotifyPlaylists .lists {
+    display:flex;
+    gap: 20px;
+    overflow: hidden;
+}
+.spotifyPlaylists .lists .l1{
+    min-width: 140px;
+    width: 160px;
+    padding: 15px;
+    background-color: #181818;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+.spotifyPlaylists .lists .l1:hover{
+    background-color: #252525;
+
+}
+.spotifyPlaylists .lists .l1 img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.spotifyPlaylists .lists .l1 .play{
+    position: relative;
+}
+.spotifyPlaylists .lists .l1 .play .fa{
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    padding: 18px;
+    background-color: #1db954;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+.spotifyPlaylists .lists .l1:hover .play .fa{
+    opacity:1;
+    transform: translateY(-20px);
+}
+.spotifyPlaylists .lists .l1 h4{
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.spotifyPlaylists .lists .l1 p{
+    color: #989898;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+
+}
+.spotifyPlaylists hr{
+    margin: 7px 0px;
+    border-color: #636363;
+}
+.bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #ae2896,#509bf5);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom h6{
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.bottom p{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+.bottom button{
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+
+}
